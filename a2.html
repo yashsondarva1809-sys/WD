@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Page layout</title>
+  
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .page{
+            padding: 5px;
+            width: 600px;
+            height: 220px;
+            margin: 20px;
+            background-color: rgb(11, 171, 193);
+        } 
+        .content{
+            height: 175px;
+            background-color: orange;
+            display: flex;
+            padding: 5px;
+        }
+        .header{
+            height: 20px;
+            background-color: #c0007f;
+            color: white;
+            padding: 5px;
+        }
+        .entries{
+            width: 70%;
+        }
+        .entry{
+            width: 90%;
+            height: 16px;
+            background-color: black;
+            color: white;
+            margin-bottom: 10px;
+            padding: 2px;
+            font-size : 12px;
+
+            }
+        .sidebar{
+            width: 30%;
+            height: 65px;
+            background-color: black;
+            color: white;
+            margin-left: 5px;
+            padding: 5px;
+            font-size: 12px;
+        }
+        .footer{
+            height: 15px;
+            background-color: blue;
+            color: white;
+            font-size: 12px;
+            padding-left: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page"> Page
+        <div class="header">
+            Header
+        </div>
+        <div class="content">
+            <div class="entries">
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+
+            </div>
+            <div class="sidebar">Sidebar</div>
+    
+
+        </div>
+        <div class="footer"> &nsbp Daarshan Uni </div>
+    </div>
+
+    
+</body>
+</html>
