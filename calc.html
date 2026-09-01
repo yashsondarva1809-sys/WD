@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        .calc{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            animation-duration: 3s;
+            animation-name: calc;
+    
+        }
+        @keyframes calc {
+            0%{
+            
+                top: 0;
+            }
+            
+            100%{
+            
+                top: calc(100% - 200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="calc"></div>
+</body>
+</html>
