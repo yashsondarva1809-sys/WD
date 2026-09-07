@@ -1,131 +1,147 @@
 <html>
-    <head>
-        <title>practice</title>
-        <style>
-            header{
-                display: flex;
-                justify-content: space-between;
-            }
 
-            nav a{
-                padding: 10px;
-            }
-            .container{
-                border: 1px solid gray;
-            }
+<head>
+    <title>website</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        
 
-            .menu{
-                background-color: red;
-                color: antiquewhite;
-                border: 1px solid yellow;
-            }
+        }
 
-            main{
-                display: flex;
-            }
+        nav a {
+            padding: 15px;
+            justify-content: space-between;
+        }
 
-            .firstrow{
-                display: flex;
-            }
+        .search input {
+            border-radius: 40px 0px 0px 40px;
+        }
 
-            .secondrow{
-                display: flex;
-            }
+        .search button {
+            background-color: red;
+            border-radius: 0px 40px 40px 0px;
+        }
 
-            main{
-                display: flex;
-            }
+        .search {
+            gap: 0;
+        }
 
-            
-            
-        </style>
-    </head>
-    <body>
-        <div class="container">
-        <header>
-  
-            <img src="data:image/jpeg;base64,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" alt="">
-             <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Login</a>
-          </nav>
-          </header>
-         <hr>
+        .above {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpISGF2tLpkS9H1OSSEGrnRU6VCrV5QB0LQVk7_SyUg&s=10);
+            background-size: cover;
+            height: 600px;
+        }
 
-          <main>
+        .hire input{
+            border-radius: 50px 50px 50px 50px;
+            background-color: red;
+            height: 40px;
+            width: 100px;
 
-             <div class="left">
+        }
 
-               <div class="menu">Sidebar</div>
-               <div class="menu">Home</div>
-               <div class="menu">Placement</div>
-               <div class="menu">Recruitment</div>
-               <div class="menu">Faculty</div>
-               <div class="menu">News</div>
+        .content {
+            position: absolute;
+            left: 100px;
+            top: 180px;
+        }
 
-             </div>
+        .images{
+            display: flex;
+            height: 50px;
+            width: 50px;
+            justify-content: space-evenly;
+            gap: 200px;
+        }
 
-          <div class="right">
+        .below{
+            display: flex;
+        }
 
-            <div class="firstrow">
+        .card1{
+            border: 100px;
+        }
+    </style>
 
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
-                
+</head>
 
-                       <div class="card">
-                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                             <p>ronaaldo</p>
-                            <p>cr7</p>
-                        </div>
+<body>
+    <div class="container">
+        <div class="above">
+            <header>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFwP-vvyzXASp_FjRq1PyLwXaQ4vfnSDLl8flk7naMw&s=10"
+                    alt="Logo" height="50px" width="50px">
+                <nav>
+
+                    <a href="">Home</a>
+                    <a href="">My intro</a>
+                    <a href="">Services</a>
+                    <a href="">Pages </a>
+                    <a href="">Contact</a>
+
+                </nav>
+
+                <div class="search">
+                    <input type="text" placeholder="Enter keyword">
+                    <button input="text">Search</button>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpB7h2goFK9dLI4GNMHwxu6qTqeAYr7V9BB7RSRHTHDw&s=10"
+                        alt="Mode" height="10px" width="10px">
 
 
-                     </div>
+                </div>
+            </header>
+            <div class="content">
 
+                <p>Hi, I'm Mary Ateer</p>
+                <h1>Designer</h1>
+                <p>I love to Work in UI/UX designing.I always try my best to make <br> good UI with best UX</p>
 
-
-                 </div>
+                <div class="hire">
+                    <input type="text" placeholder="Hire me">
+                </div>
 
             </div>
 
-            <div class="secondrow">
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
-                
 
-                      <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
+        </div>
+    </div>
+    <div class="images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp1B1Ey-M1yBkrmtb7pNht925tOO8PiSGjAGvL9oSKCA&s=10" alt="paypal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8eNE3qKp5AXmY_iJXqmocEZ6Sg3fHNlCIK0qeRXZNOg&s=10" alt="google">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyEseQJBRLNx8zT97lLToJgFLe4ee4QVtSvEXeBzyWwQ&s=10" alt="samsung">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMOPJM3bVc1r-xcX8LnP9aFev97WOp4VTBwZOhu5Z0g&s=10" alt="lenovo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRC_0oTAcJlLQNgSLfndou-1CDONmiQoAon4fktK1kVQ&s=10" alt="amazon">
+    </div>
 
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
+    <div class="below">
 
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
+        <div class="text">
+            <h1>22</h1>
+            <p>years of experience<br> working</p>
+        </div>
 
-                    <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvNQAcLA9IaI0Y3MUul9btzDWxuwWfnMDGpRC_67lJg&s=10" alt="" height="20%" width="10%"> 
-                        <p>ronaaldo</p>
-                        <p>cr7</p>
-                    </div>
+        <div class="about">
+            <h1>I'm a designer and developer with a passion for<br> web designing.</h1>
+        </div>
+        <br>
+        
+         
+            <div class="card1">
+                <h4>Creative design</h4>
+                <p>Explore more</p>
+            </div>
 
-      </main>
+            <div class="card2">
+                <h4>Web design</h4>
+            </div>
 
-    </body>
+            <div class="card3">
+                <h4>Brand identity</h4>
+            </div>
+         
+    </div>
+</body>
+
 </html>
