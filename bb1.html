@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>Lab 8</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            padding: 10px;
+        }
+
+        .container {
+            border: 1px solid gray;
+        }
+
+        .menu {
+            height: 50px;
+            background-color: red;
+            color: black;
+            border: 1px solid yellow;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .unique {
+            height: 30px;
+            background-color: red;
+            color: black;
+            border: 1px solid yellow;
+            align-content: center;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .footer {
+            height: 35px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 6px;
+            font-size: 20px;
+        }
+
+        .firstrow {
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            border-spacing: 10px;
+        }
+
+        .secondrow {
+            padding-right: 10px;
+            display: flex;  
+            justify-content: space-between;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container"></div>
+    <header>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAuQMBEQACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAABAgMABAUHCP/EAD8QAAICAQEEBgcDCQkAAAAAAAABAgMRBAUSITETIkFRYXEGFDKBkaGxQlJyM0RTVGKy0dLTFSM1c5KiwcLw/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAMBEBAQEAAgECBAMGBwEAAAAAAAERAhIDE1EhMUFhBFLBMkJigZHwIiNxobHR4RT/2gAMAwEAAhEDEQA/APjx1ORgAjDYANgA2AwawyEAOB4WjgMGskA1t0A2AAYFhtgA2AAAAEbAGAMBMAYAwA+EUTbosGtuhg0N0MGtugNHAYNbA8ApBhaOBjRwMtbAYNHdHhaDiLD1t0BpcEnrYAwYgUDYAwBgDAGADgAYaWQARjWAhQ8DbvcLBo7jXYPKO0bGOfAAyQEZIeFoqI8K026PC1t0WDW3R4NLuCw9BwJsPSOIsVpcEnoYA2wAHAAMAGwAYAZFJHABkhk2ADAYgRllDKnRUTTKMXzRWQtp1Uux/EOpdx6GWOWfIfUu8bdxzQYWmUAwtHox4XZuiDqfYsqhXic5JOonquck3WRi9K4k4elwGHrANYAV8hGABQtJt0MLR3R4Wtuhg1ujDB2bcfcwyjtBSDBaZItKkUMqdIaKrAuIqq8k0Ug6rhLnHHkHWJvKm9Wi/Zl8Suhep7mWmkuzPlxDrSvkgdBnmsB00u4S0uVyFfGqeVz26R9zM742vHyuWypxfIyvHG3HlqTgTi9K4iw9K4iPStCUGBGviPc/iaYy2njCL5N+8qSFtN0X7S94+qewqiXY4v3j6l3hlRZ9xvyDrR2g7klzi17h4WwVHPYhyEqqYPsKnGVPaw600XyfzH0iL5bDeqS7A9MvVjLTTXYPrg9TiKrmucWPC7SnghxNWgi2dXr4FRnXTXiXPD8+I0W+zohRTLnHHkwxN5WKrZ1dnCMo+UlgeF6uJ3+jdl8OpBvxjxI5ceNacPxNjwNpbG1Wil/e0zUXyeOBz8vFZ8nb4vxPHm82dbjzRnZjp1KUSMVKSSFi5S7osGqlJPEqJp+4aTJjiapFvvK1K0LJL7TL1Fi0LW+ai/NFazsXh0cvapr9yx9CpjK9p9XRGnTyXsNeU/4ldYyvPnPq6IaWp8rJLzSY8Z8vLz9l69FCXDpIvzQYyvmsdEdkb66sq2/Ca/5DIXr33F7BvfsVOb7lx+grhz8RU5bE1EeE9Han/lsW8fdU8vK/IsdmPk4WRa74hq+9+rro2NOT4SivMLyxU5ca9Kz0X1Mao2K+rdlFSWOOctr/AKmc883GnLx3pOd/v5/9OSWzNTS/yeoku+EN5fLJtOccnL/Rq9VLTvgrItffly+g/hWV/wBHdVt7VTSpm6bKpNKULKozTXdxyZ8vDxs1p4/Nz43HzrajjPX6hqMYLpZYjFYSWXwOevbnwcEokWNJU3ElcoboYejgZHggTTy5IpMZADJjLFIMpFWgyoirwZcrKxeuZWsuUdNcm8cStZWOqttcx6x5OqN0sYTY2F4Req6yL4ScX4MGdmfJ6+z9oaqFOoS1Fq6sVwk/vGXLhx2fBt4/Lz48OXxXjrLJe04y/FFMV4xXHyV003VN9bTUvyju/Qiy+7Xjym/GPRrsrvvsrlGSrhRS4qEuWZW9+TG7L/X9HZLxvikv2/VVaTTyfVtsj5xTDtWfXh9KqtnRsWOkrn4WRYvUOeHflYlZ6O6axZlpaG+eYS3WP16X/wAtfC9TLeuslnO9JvPvKehKixVRJMlWEyIyxfHmEp1RDTgjLBQEZD0KIaFIFxFdECoyq8FkpnXTTxKjHm64LCKYWrQ4DjOrRYM69DRcadR+GP7xPL5wT9jl/L/l1Ui5FxdMHjBLWPR0Ms6vUPu0+nX+6457+1/X9Hoy/wCRP793pVyFUy11VPkTVx21+xL8JnW/H5PzZPmzdtPknJiXCMRgI3P0X7XyM+rXsdUL7/yH1+5d/sdadP7fyHOH3TfJ9h9W4+38h9C9X7Hjo8/b+Q/TTfN9jrRdvSy+BXp/dPr/AGUjon+lkOeO+6L5vspHRP8ASyHPHfdN8/2WhoXn8vNf+8y5477ovn/hdNWga/ObfiVPF92PL8R/CvHQz/W7viV0+7K/iJ+WLQ0U1+d3fEc4X3Z3zy/ux0Q0c/1u4fS+7O+aflj1Nl6WcFe/XNTxgliLjx4+KZPLj8Z8VcfPOvL/AAuhbOtk8raOrX+j+Asvuz9Tjf3IvXs29P8AxLWe7c/lEuc5P3Y9HS7M1K1Fz/tTXV509PGKqy8yt59Tsw+7mzCzeX9Xdx5yeKW8fb9XRHZWrb4bd2kvdT/IGInk4/li9exdbLl6R7VXkqP6ZNrXj5OP5Z/u6o7C1u42/SjbHBdio/pkXPZtx8nH8s/3fCmuqjopxGZnWkIxKDKAJkLMmBYrAuVFUT4lIVgxxFWg0aT4s6tHBTOqRSHEVaCWclIq8GUyq0GCOS8RsqvBDZ16WzeMLn4R+pHL5w5+zf5PQqQqI7qHFYyiK243HqSsjZY9z9BT9bTnn+G3fu7+XKcvDxz7fqeEXniVawjuopsceEJPyRnbG3Dja6XXKNUt7dXB85EfVvONj84Y6kfI6av6pyg2TVSpSRLSUu6I9QIaGQEpFjiapGRURYpGXEqJsWrZUZV0RXA0jKqwy+BURXTXXLHErGXLlHVXS2UxvOOmujvfzHGPLm6K6IdtkV7xsrzvs6YU6de3qIxXk2DPeV+ju0d+yqK7YWayxuaSThRlcHnjxMuXbZkdPinHLOWzft/6qtfoIrFcpWeLmoL4NC+N+a+vGKV7RUniGli+59JkLx+6e38L2KNS6oTvarhminPV4R61veYdd5X+bvvK8fBPh/fxRn6Q01Pra73VcP3S/S36ML5rPq55+lOnUurHUW+LeF82V6KL5/f4pw9J7LroVVaWEVZJQzKWXxeB+h8NTPNvKSR8paxFeRm9XfinImric8EqieBLcyM2o44jwHXmhpOpJc5D2Jsp4WQTy8v3FSwrxq0dRBcdxlTlGd8dv1Whq+6te9lTn9md8XvVI6qeerGK9xXepviiq1dr+2l5Ifas74uM+ii1U37Vk35yH2RfFPpDLU+I+xekb1yXY2LuXomWqb5th2L0sVhe32scrO8F4zl2lRnYpFtvmxovwdNc7E+rZJPvUmGRN58p9XTW7Z+3a5fjW99SpIy5eWu2mmiXGxVeeMfQeYw5efn7KS2h6O7McL71qLtRXOM411SWODzxbMfJfJmSvQ/BSc7OXLjdfOtVOHSS6NNQ7E+4y5X2erwlz4uWUuPMhrIRsSi5Ebj3n3mWujBz4jIyAqYaRTwMH3hpw8Z4HKmw6mx6m8TqbHqbxUUh6nDxkVqbDxkCbFFIcRY6K5lRly4uiNpWsrwVhd4j1F4K+sbvaPUenpJbRUO0XdU/D64tVtexrdjNkXyV0eP8Jxnzjy7r5Tk3J5Zlbrt48JJkQlMnWk4puQtXgb2RaeNkCcZk6ByMGTCEbJSRyBGTGRkxwsMpDTYdMZYpGQaiw6mVqcFTDR1OpjlT1Uhb4jlReKsbvEeo6G9YSXMfZPpp2al95N5L4+KOSy+Tb4kXk34+ORDpG+ZOtOpZTFaqcSOROqkDIaYZwGjG3g0scxDZsgDJjIyYaQpjGDkZYZMNLBUg0sMpDLDKQJwykMsHeAsMp4HpdR6TAaOrdKPsOgO3xFonFOV3iLsvoR2E6rqTfFqsK5C08ZSAY2QGDkAABAloAGZDSOQApgGyMjJgQ5wOAyY04beFpYKkPSwd4NGFcuItPG3w0YV2Bp9QcxaeEcharA3gPG3hDGyAxsgByBYyYxjbwaMSJWwwOQJgDZAYORjBTAjZAhyPQbIJBsBgbwaeFchaeBvC08DeFp4GQ0Y2Q02yI2yPSbItDDLGAYKY9GNvBoxLIlmAmAmQAQDRGDAlsgBQwbIJDIGDEZcipgIytgoMgGyAMBAxAMgZhkwAGADIG//Z"
+            alt="">
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Login</a>
+        </nav>
+    </header>
+    <hr>
+
+    <div class="main">
+        <div class="left">
+            <div class="unique">Sidebar</div>
+            <div class="menu">Home</div>
+            <div class="menu">Placement</div>
+            <div class="menu">Recruitment</div>
+            <div class="menu">Faculty</div>
+            <div class="menu">News</div>
+        </div>
+
+        <div class="right">
+            <div class="firstrow">
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7sPcRnPGB3dJxAFWs1wzlsq0TDvgCA9YuiFYqd4IYhg&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Arjun Bala</p>
+                    <p>BE,Mtech</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEtgwsl_RXzvDz017Iajjg475FaZTXdUgp5-WP_qZSw&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Firoz Sheraiya</p>
+                    <p>BE,ME</p>
+                </div><br>
+
+            </div>
+
+            <div class="secondrow">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6MYdCo7p0ptB3P2e9Ycxym1W2H-dj_ImIlnvocXseGw&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Harsh Kansagara</p>
+                    <p>L&T pvt ltd</p>
+                    <p>4.5 lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAz1B1t0RtmTlKJC5fSlOkFrX0MquVzeYJWEjLOMHfAg&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Shyam Kantesariya</p>
+                    <p>Tata consultunsy service</p>
+                    <p>3.2 lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmQnHVBlrW7YYS6A0QbbSNAwxGjO_O7LpA5Z-uDT722g&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Jeet Dhamecha</p>
+                    <p>Reliance pvt ltd</p>
+                    <p>5.0 lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdlV7__dxdCpnKsFkIabiT2aVc_C6RaO1arw1nERodcA&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Harsh Maniar</p>
+                    <p>Reliance industry ltd</p>
+                    <p>5.0 lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREueZUQQH43EH1gHAePZoqIW0kQui_OvPI6FJImjRF4A&s=10"
+                        alt="" height="100px" width="100px">
+                    <p>Anand Dabhi</p>
+                    <p>BSNL</p>
+                    <p>5.5 lac</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">&copy; Darshan University</div>
+</body>
+
+</html>
