@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Movie catalogue - Movie Explorer Portal">
+  <title>Catalogue | Movie Explorer Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Movie Explorer Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><strong><a href="movies.html" aria-current="page">[Catalogue]</a></strong></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h2>Movie Catalogue</h2>
+
+    <section>
+      <h3>Search</h3>
+      <form action="movies.html" method="get">
+        <label for="search">Search movies:</label>
+        <input type="search" id="search" name="q" placeholder="Enter movie title">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Filter by Category</h3>
+      <button type="button">All</button>
+      <button type="button">Action</button>
+      <button type="button">Comedy</button>
+      <button type="button">Drama</button>
+      <button type="button">Sci-Fi</button>
+      <button type="button">Thriller</button>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3>All Movies</h3>
+
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1011/160/240" alt="Poster of Midnight Horizon" width="160" height="240">
+              <h4>Midnight Horizon</h4>
+              <p>⭐ 8.4 | 2025 | Sci-Fi</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1025/160/240" alt="Poster of The Last Lantern" width="160" height="240">
+              <h4>The Last Lantern</h4>
+              <p>⭐ 7.9 | 2024 | Drama</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1035/160/240" alt="Poster of Rush Hour Heroes" width="160" height="240">
+              <h4>Rush Hour Heroes</h4>
+              <p>⭐ 7.2 | 2026 | Action</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1043/160/240" alt="Poster of Laugh Track" width="160" height="240">
+              <h4>Laugh Track</h4>
+              <p>⭐ 6.8 | 2023 | Comedy</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1050/160/240" alt="Poster of Shadow Protocol" width="160" height="240">
+              <h4>Shadow Protocol</h4>
+              <p>⭐ 7.5 | 2025 | Thriller</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1062/160/240" alt="Poster of Paper Wings" width="160" height="240">
+              <h4>Paper Wings</h4>
+              <p>⭐ 8.1 | 2024 | Animation</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1074/160/240" alt="Poster of Echoes of Tomorrow" width="160" height="240">
+              <h4>Echoes of Tomorrow</h4>
+              <p>⭐ 7.0 | 2022 | Sci-Fi</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+          <td>
+            <article>
+              <img src="https://picsum.photos/id/1084/160/240" alt="Poster of Monsoon Diaries" width="160" height="240">
+              <h4>Monsoon Diaries</h4>
+              <p>⭐ 8.0 | 2026 | Drama</p>
+              <a href="details.html">Details</a>
+            </article>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <nav aria-label="Pagination">
+      <p>
+        <a href="movies.html">&laquo; Previous</a> |
+        <strong>[1]</strong> |
+        <a href="movies.html">2</a> |
+        <a href="movies.html">3</a> |
+        <a href="movies.html">Next &raquo;</a>
+      </p>
+    </nav>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Movie Explorer Portal</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="movies.html">Catalogue</a> |
+      <a href="details.html">Details</a> |
+      <a href="about.html">About</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About and contact - Movie Explorer Portal">
+  <title>About &amp; Contact | Movie Explorer Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 Movie Explorer Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Catalogue</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><strong><a href="about.html" aria-current="page">[About]</a></strong></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>About the Project</h2>
+      <p>
+        Movie Explorer Portal is a multi-page static website.
+      </p>
+      <h3>Pages in this Project</h3>
+      <ol>
+        <li><strong>index.html</strong> - Home page with hero section and spotlight movies</li>
+        <li><strong>movies.html</strong> - Catalogue with search, filters and pagination</li>
+        <li><strong>details.html</strong> - Movie details, cast, specs and reviews</li>
+        <li><strong>about.html</strong> - About page and feedback form</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Credits</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+          <th>Yash</th>
+          <th>287</th>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Feedback / Contact Form</h2>
+      <form action="about.html" method="post">
+        <fieldset>
+          <legend>Send us your feedback</legend>
+
+          <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </p>
+
+          <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" placeholder="Write your message here..." required></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Movie Explorer Portal</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="movies.html">Catalogue</a> |
+      <a href="details.html">Details</a> |
+      <a href="about.html">About</a>
+    </p>
+  </footer>
+
+</body>
+</html>
